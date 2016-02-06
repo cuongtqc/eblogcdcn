@@ -1,0 +1,171 @@
+@font-face {
+	font-family: alina;
+	src: url('/fonts/alina.otf');
+}
+
+body {
+   background-color: #D6F2E1;
+   display: flex;
+   flex-flow: column;
+   color: #544738;
+   font-family: helvetica, sans-serif;
+   padding: 20px;
+   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+hr {
+	color:  #FCCA7B;
+}
+.containerx {
+	padding: 2px 2px 2px 2px;
+}
+
+/*Cover header*/
+.cover_picture {	
+	position: relative;
+	width: 100%;
+	height: 178px;
+	padding: 2px 2px 2px 2px;
+	border: solid thin;
+	border-radius: 4px;
+	background-image: url('http://www.sanmeera.com/wp-content/uploads/2015/12/cute-hd-wallpaper-images.jpg');
+	background-position: center;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column wrap;
+}
+
+.cover_text {
+	text-shadow: 2px 2px gray;
+	font-family: 'alina';
+	color: #1BE96A;
+}
+
+
+/*navigation bar*/
+ul li#menu {
+	float: left;
+	list-style: none;
+	font-family: alina;
+	margin-right: 1em; 
+}
+
+li#menu a {
+	color: #544738;
+	text-decoration: none;
+	float: left;
+	font-size: 25px;
+	padding: 12px;
+}
+
+li#menu a:hover {
+	color: #7eb9be;
+}
+
+li#menu a:hover {
+	-webkit-transform: rotate(-10deg) scale(1.2);
+	-moz-transform: rotate(-10deg) scale(1.2);
+	-o-transform: rotate(-10deg) scale(1.2);
+}
+
+
+/*Board*/
+.mainboard {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 30px;
+}
+	/*Utilites*/
+	.utility {
+		width: 25%;
+		height: auto;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	
+		background-color: #FDE1B1;
+	}
+
+	/*Options*/
+	.options {
+		width: 25%;
+		height: auto;
+		display: flex;
+		flex-flow: column;
+		
+		background-color: #FDE1B1;
+	}
+
+	/*Post Board*/
+	.postboard {
+		width:50%;
+		height: auto;
+		display: flex;
+		flex-flow: column;
+
+		border-left: 1px solid #A2855D;
+		border-right: 1px solid #A2855D;
+		background-color: #FDE1B1;
+	}
+
+/* Post list */
+.post {
+	width:100%;
+	height: 150px;
+	flex-direction: column;	
+}
+.post_header {
+	width: 100%;
+	height: 30%;
+
+	font-size: 30px;
+	color: black;
+	font-style: bold;
+}
+.post_body {
+	width: 100%;
+	height: 50%;
+}
+.post_content {
+	width: 100%;
+	height: 20%;
+}
+
+
+/* Flex box container*/
+.in_row {
+	flex-flow: row;
+}
+.in_col {
+	flex-flow: column;
+}
+.di_lr {(
+	display: inline-flex;
+	flex-direction: row;
+}
+.di_rl {
+	display: inline-flex;
+	flex-direction: row-reverse;
+}
+.di_tb {
+	flex-direction: column;
+}
+.di_bt {
+	flex-direction: column-reverse;
+}
+.space_ar {
+	justify-content: space-around;
+}
+/* Flex box item */
+.item {
+	flex-basis: auto;
+}
