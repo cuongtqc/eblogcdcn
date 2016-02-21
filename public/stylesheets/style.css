@@ -96,6 +96,14 @@ li#menu a:hover {
 	}
 
 	/*Options*/
+	ul#main {
+		color: #7eb9be;
+	}
+	li#main {
+		color: black;
+	}
+
+
 	.options {
 		width: 25%;
 		height: auto;
