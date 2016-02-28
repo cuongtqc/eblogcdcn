@@ -5,13 +5,14 @@ block content
 	.container
 		h3 HOMEWORK W1
 		.container
-			-var imgs = [{icon: '/images/day1.png'},{icon: '/images/day12.png'},{icon: '/images/day13.png'},{icon: '/images/day2.png'},{icon: '/images/day212.png'},{icon: '/images/day22.png'},{icon: '/images/day23.png'},{icon: '/images/day3.png'},{icon: '/images/day32.png'},{icon: '/images/day33.png'},{icon: '/images/day34.png'},{icon: '/images/day41.png'},{icon: '/images/day42.png'},{icon: '/images/day43.png'},{icon: '/images/day51.png'},{icon: '/images/day52.png'},{icon: '/images/day53.png'},{icon: '/images/day61.png'},{icon: '/images/day62.png'},{icon: '/images/day63.png'},{icon: '/images/day64.png'},{icon: '/images/day71.png'},{icon: '/images/day72.png'}]
+			-var baseURL = 'http://postimage.org/image';
+			-var imgs = [{icon: '/wzmgukztr/full'},{icon: '/da46i4rxb/full'},{icon: '/99x15w1gf/full'},{icon: '/hxa8jwfa7/full'},{icon: '/7jn6vvyov/full'},{icon: '/bh19tt6qn/full'},{icon: '/44vto9oin/full'},{icon: '/jl9dyjt5r/full'},{icon: '/d16ls7f4v/full'},{icon: '/4o5iba5b3/full'},{icon: '/zfoa8fhwf/full'},{icon: '/3uob4x9wf/full'},{icon: '/itbbd3ecf/full'},{icon: '/6tzt5s8rj/full'},{icon: '/4qpdy48yn/full'},{icon: '/uaro4jucf/full'},{icon: '/4t99kycm7/full'},{icon: '/5k1zqqezj/full'},{icon: '/9hp9g51sv/full'},{icon: '/jt1m8sti7/full'},{icon: '/d3v2ss867/full'},{icon: '/m1ke3vpzz/full'},{icon: '/7jn6vvyov/full'}]
 			-console.log('This is TEST' + imgs)
 			-var n = 1;
 
 			each image in imgs
 				h4 Question: #{n++}
-				img( class="img-resize" src="#{image.icon}")
+				img( class="img-resize" src="#{baseURL + image.icon}")
 
 
 
