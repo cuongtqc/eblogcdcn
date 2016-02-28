@@ -20,7 +20,15 @@ a {
 hr {
 	color:  #FCCA7B;
 }
+
+.img-resize {
+	width: 50%;
+	height: 50%;
+}
+
 .containerx {
+	height:100%;
+	width: 100%;
 	padding: 2px 2px 2px 2px;
 }
 
@@ -89,7 +97,7 @@ li#menu a:hover {
 		height: auto;
 		display: flex;
 		flex-flow: column;
-		justify-content: center;
+		/*justify-content: center;*/
 		align-items: center;
 	
 		background-color: #FDE1B1;

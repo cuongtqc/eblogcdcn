@@ -1,11 +1,17 @@
 extends layout
 
 block content
-	.post
-		.post_header
-			h2 Hi, Guest!.
-		.post_body
-			h3 My Personal Blog 
-		.post_content
-			|Time: 10:15 06/02/2016
-  
+	link(rel='javascript', href='/javascripts/main.js')
+	.container
+		h3 HOMEWORK W1
+		.container
+			-var imgs = [{icon: '/images/day1.png'},{icon: '/images/day12.png'},{icon: '/images/day13.png'},{icon: '/images/day2.png'},{icon: '/images/day212.png'},{icon: '/images/day22.png'},{icon: '/images/day23.png'},{icon: '/images/day3.png'},{icon: '/images/day32.png'},{icon: '/images/day33.png'},{icon: '/images/day34.png'},{icon: '/images/day41.png'},{icon: '/images/day42.png'},{icon: '/images/day43.png'},{icon: '/images/day51.png'},{icon: '/images/day52.png'},{icon: '/images/day53.png'},{icon: '/images/day61.png'},{icon: '/images/day62.png'},{icon: '/images/day63.png'},{icon: '/images/day64.png'},{icon: '/images/day71.png'},{icon: '/images/day72.png'}]
+			-console.log('This is TEST' + imgs)
+			-var n = 1;
+
+			each image in imgs
+				h4 Question: #{n++}
+				img( class="img-resize" src="#{image.icon}")
+
+
+

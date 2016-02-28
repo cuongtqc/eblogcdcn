@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	link(rel='javascript', href='/javascripts/main.js')
+	.post(ng-app='index')
+		.post(ng-controller='listImage')
+		.container(ng-repeat='img in imgs')
+			img(src="#{imgs}").
+
