@@ -23,15 +23,16 @@ html
 					a(href='/contact') Contact
 		.mainboard
 			.options.containerx
-				.di_lr
-					input#search.form-control(type='text', name='searchbox', placeholder='Search post...')
-					span.glyphicon.glyphicon-search.btn.btn-primary
-						|Search
-				ul.normal
-					li
-						a(href='/createPost') Write a new post
-					li
-						a(href='/listPost') List all post
+				h3.di_lr.bg-primary Reference Link
+				hr
+				ul.normal.text-success 
+					h3.bg-success Home work
+					hr
+					a.bg-info.text-info(href='/bt1') Home Work 1
+					hr
+					a.bg-info.text-info(href='/bt2') Home Work 2
+					hr
+					a.bg-info.text-info(href='https://cdcnsimpletodo.herokuapp.com/') Simple TODO List
 			.postboard.containerx
 				block content
 			.utility.containerx
